@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
-bool prime(int );
+bool prime(long);
 
 int main()
 {
-	int n,i;
+	long n,i;
 	cout<<"input the number"<<endl;
 	cin>>n;
 	for(i=2;i<=n;i++)
@@ -22,9 +22,9 @@ int main()
 
 }
 
-bool prime(int n)
+bool prime(long n)
 {
-	for(int i=2;i<n;i++)
+	for(long i=2;i<n;i++)
 	{
 		if(n%i==0)
 			return false;
